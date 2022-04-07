@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title #{title}
+        link(rel="stylesheet" href="main.css")
+    body
+        h1 #{title}
+        nav
+            ul
+                each animal in animales
+                    li 
+                        a(href="photos/"+animal.title) #{animal.title}
+
+        img(src=image alt="Tiger")
+        p #{text}
+        

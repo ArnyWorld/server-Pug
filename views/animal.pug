@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title #{title}
+        link(rel="stylesheet" href="estilos.css")
+    body
+        h1 #{title}
+        div(class="container")
+            a(class="btn-before" href="/") Regresar
+            div(class="clearfix")
+            figure
+                img(src=data.image width=750)
+                figcaption #{data.text}
